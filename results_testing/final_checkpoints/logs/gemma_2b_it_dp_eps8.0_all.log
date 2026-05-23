@@ -1,0 +1,37 @@
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights: 100%|██████████| 288/288 [00:00<00:00, 7506.49it/s]
+Loaded LoRA checkpoint: checkpoints/gemma_2b_it/dp_eps8.0/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Eval prompt format : chat
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma_2b_it  ε=8.0
+=================================================================
+  Classification Accuracy : 0.7930
+  NLI Accuracy            : 0.6990
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Eval prompt format : chat
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma_2b_it  ε=8.0
+=================================================================
+  Classification Accuracy : 0.8010
+  NLI Accuracy            : 0.7170
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+  Eval prompt format : chat
+
+Saved results to results_testing/final_checkpoints/gemma_2b_it_checkpoints__gemma_2b_it__dp_eps8.0__final_all_clean_eval.json

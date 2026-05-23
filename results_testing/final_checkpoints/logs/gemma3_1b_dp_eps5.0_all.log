@@ -1,0 +1,38 @@
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 9830.45it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loaded LoRA checkpoint: checkpoints/gemma3_1b/dp_eps5.0/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Eval prompt format : response
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=5.0
+=================================================================
+  Classification Accuracy : 0.3060
+  NLI Accuracy            : 0.4470
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Eval prompt format : response
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=5.0
+=================================================================
+  Classification Accuracy : 0.3190
+  NLI Accuracy            : 0.4250
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+  Eval prompt format : response
+
+Saved results to results_testing/final_checkpoints/gemma3_1b_checkpoints__gemma3_1b__dp_eps5.0__final_all_clean_eval.json

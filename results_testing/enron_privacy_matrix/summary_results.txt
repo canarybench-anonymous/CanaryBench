@@ -1,0 +1,6 @@
+Model           Run              ε           Gap  Exp Mean  Exp P95  WBC AUC  Mem Rec  Ref Rec       PPL
+-------------------------------------------------------------------------------------------------------
+gemma3_1b       baseline_enron   ∞       +0.0699      1.44     4.35   0.4971   0.0000   0.0000      9.72
+gemma_2b_it     baseline_enron   ∞       +0.3417      1.07     3.41   0.6684   0.0000   0.0000      7.02
+llama3_2_1b_it  baseline_enron   ∞       +0.0339      1.48     4.84   0.5812   0.0000   0.0000      9.96
+vault_gemma     baseline_enron   ∞       +0.1603      1.28     3.97   0.6842   0.0000   0.0000     10.12

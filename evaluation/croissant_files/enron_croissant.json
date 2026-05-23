@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "enron_canary",
+  "description": "\n\t\n\t\t\n\t\tCanaryBench-Enron\n\t\n\nFrequency-aware canary injection benchmark for auditing memorization \nin finetuned language models, built on the Enron email corpus.\n\n\t\n\t\t\n\t\tDataset Description\n\t\n\nThis dataset is part of CanaryBench, a benchmark for evaluating \nmemorization in finetuned language models across repetition tiers \nand privacy regimes.\n\nFrequency tiers: 1×, 10×, 50×\nDomain: Email (Enron corpus)\nMember canaries: 770\nReference canaries: 1000\n\n\n\t\n\t\t\n\t\tFiles… See the full description on the dataset page: https://huggingface.co/datasets/anony-mouse123/enron_canary.",
+  "alternateName": [
+    "anony-mouse123/enron_canary"
+  ],
+  "creator": {
+    "@type": "Person",
+    "name": "anon",
+    "url": "https://huggingface.co/anony-mouse123"
+  },
+  "keywords": [
+    "text-generation",
+    "English",
+    "cc-by-4.0",
+    "1K\u003Cn\u003C10K",
+    "🇺🇸 Region: US",
+    "privacy",
+    "memorization",
+    "differential-privacy",
+    "canary-injection",
+    "PII"
+  ],
+  "license": "https://choosealicense.com/licenses/cc-by-4.0/",
+  "url": "https://huggingface.co/datasets/anony-mouse123/enron_canary",
+  "rai:dataLimitations": "All PII canaries are synthetic. Not suitable for evaluating real personal data leakage. Results may not generalize to other domains or longer sequences.",
+  "rai:personalSensitiveInformation": "No real personal information is included. All PII values are fully synthetic and randomly generated.",
+  "rai:intendedUse": "Privacy auditing and memorization research for finetuned language models across repetition tiers and privacy regimes.",
+  "rai:prohibitedUse": "Must not be used to attack or extract information from production systems or real individuals."
+}

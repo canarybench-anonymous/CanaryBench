@@ -1,0 +1,23 @@
+[
+  {
+    "model": "llama3_2_1b_it_20",
+    "tier": 50,
+    "evaluated": 20,
+    "canaries_extracted": 20,
+    "extraction_rate": 1.0
+  },
+  {
+    "model": "llama3_2_1b_it_20",
+    "tier": 10,
+    "evaluated": 20,
+    "canaries_extracted": 20,
+    "extraction_rate": 1.0
+  },
+  {
+    "model": "llama3_2_1b_it_20",
+    "tier": 1,
+    "evaluated": 20,
+    "canaries_extracted": 0,
+    "extraction_rate": 0.0
+  }
+]

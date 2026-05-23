@@ -1,0 +1,30 @@
+{
+  "benchmark": "enron_privacy_matrix",
+  "out_dir": "/home/noora/dp-llm/results_testing/enron_privacy_matrix",
+  "runs": [
+    {
+      "model_key": "gemma3_1b",
+      "run": "baseline_enron",
+      "epsilon": null,
+      "path": "/home/noora/dp-llm/results_testing/enron_privacy_matrix/gemma3_1b__baseline_enron.json"
+    },
+    {
+      "model_key": "vault_gemma",
+      "run": "baseline_enron",
+      "epsilon": null,
+      "path": "/home/noora/dp-llm/results_testing/enron_privacy_matrix/vault_gemma__baseline_enron.json"
+    },
+    {
+      "model_key": "gemma_2b_it",
+      "run": "baseline_enron",
+      "epsilon": null,
+      "path": "/home/noora/dp-llm/results_testing/enron_privacy_matrix/gemma_2b_it__baseline_enron.json"
+    },
+    {
+      "model_key": "llama3_2_1b_it",
+      "run": "baseline_enron",
+      "epsilon": null,
+      "path": "/home/noora/dp-llm/results_testing/enron_privacy_matrix/llama3_2_1b_it__baseline_enron.json"
+    }
+  ]
+}

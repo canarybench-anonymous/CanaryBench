@@ -1,0 +1,81 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 340/340 [00:00<00:00, 8535.57it/s]
+
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 340/340 [00:00<00:00, 11594.67it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 236/236 [00:00<00:00, 12374.12it/s]
+
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 236/236 [00:00<00:00, 11699.59it/s]
+
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 288/288 [00:00<00:00, 7279.45it/s]
+
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 288/288 [00:00<00:00, 9944.84it/s]
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 146/146 [00:00<00:00, 7674.56it/s]
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 146/146 [00:00<00:00, 7619.84it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[load] gemma3_1b: /home/noora/dp-llm/checkpoints/gemma3_1b/baseline_enron/final
+[privacy] gemma3_1b: secret-span losses
+[privacy] gemma3_1b: WBC attack
+[privacy] gemma3_1b: secret recall
+[utility] gemma3_1b: Enron val perplexity
+[saved] /home/noora/dp-llm/results_testing/enron_privacy_matrix/gemma3_1b__baseline_enron.json
+[load] vault_gemma: /home/noora/dp-llm/checkpoints/vault_gemma/baseline_enron/final
+[privacy] vault_gemma: secret-span losses
+[privacy] vault_gemma: WBC attack
+[privacy] vault_gemma: secret recall
+[utility] vault_gemma: Enron val perplexity
+[saved] /home/noora/dp-llm/results_testing/enron_privacy_matrix/vault_gemma__baseline_enron.json
+[load] gemma_2b_it: /home/noora/dp-llm/checkpoints/gemma_2b_it/baselin_enron/final
+[privacy] gemma_2b_it: secret-span losses
+[privacy] gemma_2b_it: WBC attack
+[privacy] gemma_2b_it: secret recall
+[utility] gemma_2b_it: Enron val perplexity
+[saved] /home/noora/dp-llm/results_testing/enron_privacy_matrix/gemma_2b_it__baseline_enron.json
+[load] llama3_2_1b_it: /home/noora/dp-llm/checkpoints/enron/llama3_2_1b_it/baseline/final
+[privacy] llama3_2_1b_it: secret-span losses
+[privacy] llama3_2_1b_it: WBC attack
+[privacy] llama3_2_1b_it: secret recall
+[utility] llama3_2_1b_it: Enron val perplexity
+[saved] /home/noora/dp-llm/results_testing/enron_privacy_matrix/llama3_2_1b_it__baseline_enron.json
+{
+  "benchmark": "enron_privacy_matrix",
+  "out_dir": "/home/noora/dp-llm/results_testing/enron_privacy_matrix",
+  "runs": [
+    {
+      "model_key": "gemma3_1b",
+      "run": "baseline_enron",
+      "epsilon": null,
+      "path": "/home/noora/dp-llm/results_testing/enron_privacy_matrix/gemma3_1b__baseline_enron.json"
+    },
+    {
+      "model_key": "vault_gemma",
+      "run": "baseline_enron",
+      "epsilon": null,
+      "path": "/home/noora/dp-llm/results_testing/enron_privacy_matrix/vault_gemma__baseline_enron.json"
+    },
+    {
+      "model_key": "gemma_2b_it",
+      "run": "baseline_enron",
+      "epsilon": null,
+      "path": "/home/noora/dp-llm/results_testing/enron_privacy_matrix/gemma_2b_it__baseline_enron.json"
+    },
+    {
+      "model_key": "llama3_2_1b_it",
+      "run": "baseline_enron",
+      "epsilon": null,
+      "path": "/home/noora/dp-llm/results_testing/enron_privacy_matrix/llama3_2_1b_it__baseline_enron.json"
+    }
+  ]
+}

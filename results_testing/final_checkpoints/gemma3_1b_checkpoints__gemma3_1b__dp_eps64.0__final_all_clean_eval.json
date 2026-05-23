@@ -1,0 +1,181 @@
+{
+  "model_key": "gemma3_1b",
+  "checkpoint": "checkpoints/gemma3_1b/dp_eps64.0/final",
+  "device": "cuda",
+  "eval_prompt_format": "chat",
+  "evaluations": [
+    {
+      "dataset": "test",
+      "num_samples": 3000,
+      "avg_loss": 0.45634967868514165,
+      "group_losses": {
+        "A": 0.4557780925466941,
+        "B": 0.45749285096203673
+      },
+      "task_losses": {
+        "classification": 0.5325499395715597,
+        "pii_detection": 0.45749285096203673,
+        "nli": 0.37900624552182854
+      },
+      "metrics": {
+        "classification": {
+          "accuracy": 0.542,
+          "n_samples": 1000
+        },
+        "nli": {
+          "accuracy": 0.528,
+          "n_samples": 1000
+        },
+        "pii_detection": {
+          "relaxed_precision": 0.724,
+          "relaxed_recall": 0.7344,
+          "relaxed_f1": 0.7292,
+          "relaxed_exact_match": 0.353,
+          "n_samples": 1000
+        }
+      },
+      "metrics_num_samples": 3000,
+      "samples": [
+        {
+          "group": "A",
+          "task": "classification",
+          "input": "Instruction: Classify the topic of the news article. Answer with one of: World, Sports, Business, Sci/Tech.\n\nText: Aether Declines Higher Bid for Unit (washingtonpost.com) washingtonpost.com - Aether Systems Inc., a Maryland wireless data company that is selling off its operating units, said yesterday it received a #36;30 million offer for a division it had already agreed to sell to another buyer for #36;25 million.\nLabel:",
+          "target": "Sci/Tech",
+          "generated": "Business"
+        },
+        {
+          "group": "A",
+          "task": "nli",
+          "input": "Instruction: Determine the relationship between the premise and the hypothesis. Answer with one of: entailment, neutral, contradiction.\n\nPremise: Oh, I I haven't quite worked that out.\nHypothesis: I haven't put that together yet.\nLabel:",
+          "target": "entailment",
+          "generated": "neutral"
+        },
+        {
+          "group": "B",
+          "task": "pii_detection",
+          "input": "Instruction: Identify all personally identifiable information mentioned in the following text. Return the detected private values separated by semicolons.\n\nText: To-do list for Vaishnavan's art exhibition.",
+          "target": "Vaishnavan",
+          "generated": "Vaishnavan;"
+        },
+        {
+          "group": "A",
+          "task": "classification",
+          "input": "Instruction: Classify the topic of the news article. Answer with one of: World, Sports, Business, Sci/Tech.\n\nText: Pioneer replaces plasma TV power supplies Certain Pioneer TVs have a faulty power supply. An upgrade is available.\nLabel:",
+          "target": "Sci/Tech",
+          "generated": "Sci/Tech"
+        },
+        {
+          "group": "A",
+          "task": "nli",
+          "input": "Instruction: Determine the relationship between the premise and the hypothesis. Answer with one of: entailment, neutral, contradiction.\n\nPremise: Recommendations\nHypothesis: Suggesetions\nLabel:",
+          "target": "entailment",
+          "generated": "neutral"
+        }
+      ],
+      "eval_modes": {
+        "classification": "loss_based_label_scoring",
+        "nli": "loss_based_label_scoring",
+        "open_output_tasks": "greedy_generation",
+        "attack_eval": "loss_only"
+      },
+      "eval_prompt_format": "chat"
+    },
+    {
+      "dataset": "val",
+      "num_samples": 3000,
+      "avg_loss": 0.45734426357535024,
+      "group_losses": {
+        "A": 0.43331318674853536,
+        "B": 0.5054064172289799
+      },
+      "task_losses": {
+        "classification": 0.4940145781526808,
+        "nli": 0.37261179534439,
+        "pii_detection": 0.5054064172289799
+      },
+      "metrics": {
+        "classification": {
+          "accuracy": 0.575,
+          "n_samples": 1000
+        },
+        "nli": {
+          "accuracy": 0.539,
+          "n_samples": 1000
+        },
+        "pii_detection": {
+          "relaxed_precision": 0.7473,
+          "relaxed_recall": 0.7571,
+          "relaxed_f1": 0.7521,
+          "relaxed_exact_match": 0.364,
+          "n_samples": 1000
+        }
+      },
+      "metrics_num_samples": 3000,
+      "samples": [
+        {
+          "group": "A",
+          "task": "classification",
+          "input": "Instruction: Classify the topic of the news article. Answer with one of: World, Sports, Business, Sci/Tech.\n\nText: Electronic Jihad Internet Attack Rumored For Today Electronic Jihad Internet Attack Rumored For Today\\\\Is the Electronic Jihad attack happening today or is it just stirred up rumors? Yevgeny Kaspersky has raised concerns of a major attack on the internet today. Kaspersky has been widely quoted as saying that there would be a major online attack against Israeli ...\nLabel:",
+          "target": "Sci/Tech",
+          "generated": "Sci/Tech"
+        },
+        {
+          "group": "A",
+          "task": "nli",
+          "input": "Instruction: Determine the relationship between the premise and the hypothesis. Answer with one of: entailment, neutral, contradiction.\n\nPremise: Whether a government postal service can engage in these kinds of negotiations deserves serious study.\nHypothesis: It is already certain that the postal service can engage in these negotiations.\nLabel:",
+          "target": "contradiction",
+          "generated": "contradiction"
+        },
+        {
+          "group": "B",
+          "task": "pii_detection",
+          "input": "Instruction: Identify all personally identifiable information mentioned in the following text. Return the detected private values separated by semicolons.\n\nText: Form for Preservation Society Participation: Soundscape and Acoustic Ecology Studies We kindly request your participation in our soundscape and acoustic ecology studies. Please provide your Jaschar Rakibul, Gottscher, and +20 48.165 5363 for further information.",
+          "target": "Jaschar Rakibul; Gottscher; +20 48.165 5363",
+          "generated": "Jaschar Rakibul; Gottscher; +20 48.165 5363"
+        },
+        {
+          "group": "A",
+          "task": "classification",
+          "input": "Instruction: Classify the topic of the news article. Answer with one of: World, Sports, Business, Sci/Tech.\n\nText: Lowe's road to glory For Derek Lowe, two roads diverged not in a yellow wood, as New England's poet laureate Robert Frost had it, but on the greenswards of Fenway Park, Yankee Stadium, and Busch Stadium.\nLabel:",
+          "target": "Sports",
+          "generated": "Sports"
+        },
+        {
+          "group": "A",
+          "task": "nli",
+          "input": "Instruction: Determine the relationship between the premise and the hypothesis. Answer with one of: entailment, neutral, contradiction.\n\nPremise: Zoom-out vs. zoom- Ever since Roe , pro-life posters and pamphlets have depicted isolated fetuses.\nHypothesis: It's been argued that pro-life posters are seeking to humanize the unborn through these depictions.\nLabel:",
+          "target": "neutral",
+          "generated": "neutral"
+        }
+      ],
+      "eval_modes": {
+        "classification": "loss_based_label_scoring",
+        "nli": "loss_based_label_scoring",
+        "open_output_tasks": "greedy_generation",
+        "attack_eval": "loss_only"
+      },
+      "eval_prompt_format": "chat"
+    },
+    {
+      "dataset": "attack_eval",
+      "num_samples": 1000,
+      "avg_loss": 3.4153668256998064,
+      "group_losses": {
+        "C": 3.4153668256998064
+      },
+      "task_losses": {
+        "secret_recall": 3.4153668256998064
+      },
+      "metrics": null,
+      "metrics_num_samples": 0,
+      "samples": [],
+      "eval_modes": {
+        "classification": "loss_based_label_scoring",
+        "nli": "loss_based_label_scoring",
+        "open_output_tasks": "greedy_generation",
+        "attack_eval": "loss_only"
+      },
+      "eval_prompt_format": "chat"
+    }
+  ]
+}

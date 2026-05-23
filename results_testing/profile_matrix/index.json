@@ -1,0 +1,17 @@
+{
+  "out_dir": "results_testing/profile_matrix",
+  "runs": [
+    {
+      "model_key": "vault_gemma",
+      "run": "baseline",
+      "epsilon": null,
+      "path": "results_testing/profile_matrix/vault_gemma__baseline.json"
+    },
+    {
+      "model_key": "vault_gemma",
+      "run": "dp_eps64.0",
+      "epsilon": 64.0,
+      "path": "results_testing/profile_matrix/vault_gemma__dp_eps64.0.json"
+    }
+  ]
+}

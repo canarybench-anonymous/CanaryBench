@@ -1,0 +1,181 @@
+{
+  "model_key": "vault_gemma",
+  "checkpoint": "checkpoints/vault_gemma/baseline/final",
+  "device": "cuda",
+  "eval_prompt_format": "auto",
+  "evaluations": [
+    {
+      "dataset": "test",
+      "num_samples": 3000,
+      "avg_loss": 0.32382700162138767,
+      "group_losses": {
+        "A": 0.44586136598102166,
+        "B": 0.07975827290211965
+      },
+      "task_losses": {
+        "classification": 0.24347003811522155,
+        "pii_detection": 0.07975827290211965,
+        "nli": 0.6482526938468218
+      },
+      "metrics": {
+        "classification": {
+          "accuracy": 0.899,
+          "n_samples": 1000
+        },
+        "nli": {
+          "accuracy": 0.405,
+          "n_samples": 1000
+        },
+        "pii_detection": {
+          "relaxed_precision": 0.1888,
+          "relaxed_recall": 0.9868,
+          "relaxed_f1": 0.3169,
+          "relaxed_exact_match": 0.176,
+          "n_samples": 1000
+        }
+      },
+      "metrics_num_samples": 3000,
+      "samples": [
+        {
+          "group": "A",
+          "task": "classification",
+          "input": "Instruction: Classify the topic of the news article. Answer with one of: World, Sports, Business, Sci/Tech.\n\nText: Aether Declines Higher Bid for Unit (washingtonpost.com) washingtonpost.com - Aether Systems Inc., a Maryland wireless data company that is selling off its operating units, said yesterday it received a #36;30 million offer for a division it had already agreed to sell to another buyer for #36;25 million.\nLabel:",
+          "target": "Sci/Tech",
+          "generated": "Sci/Tech"
+        },
+        {
+          "group": "A",
+          "task": "classification",
+          "input": "Instruction: Classify the topic of the news article. Answer with one of: World, Sports, Business, Sci/Tech.\n\nText: Pioneer replaces plasma TV power supplies Certain Pioneer TVs have a faulty power supply. An upgrade is available.\nLabel:",
+          "target": "Sci/Tech",
+          "generated": "Sci/Tech"
+        },
+        {
+          "group": "A",
+          "task": "nli",
+          "input": "Instruction: Determine the relationship between the premise and the hypothesis. Answer with one of: entailment, neutral, contradiction.\n\nPremise: Oh, I I haven't quite worked that out.\nHypothesis: I haven't put that together yet.\nLabel:",
+          "target": "entailment",
+          "generated": "entailment"
+        },
+        {
+          "group": "A",
+          "task": "classification",
+          "input": "Instruction: Classify the topic of the news article. Answer with one of: World, Sports, Business, Sci/Tech.\n\nText: Bombs kill 35 children in Iraq Three bombs exploded at a neighborhood celebration today in western Baghdad, killing 35 children and seven adults, officials said.\nLabel:",
+          "target": "World",
+          "generated": "World"
+        },
+        {
+          "group": "A",
+          "task": "classification",
+          "input": "Instruction: Classify the topic of the news article. Answer with one of: World, Sports, Business, Sci/Tech.\n\nText: ICC probe clears Zimbabwe of racism in cricket LAHORE, Pakistan (AFP) - The International Cricket Council said yesterday a probe had found no evidence of racism in Zimbabwe cricket and that the Test status of the country #39;s team was never in question.\nLabel:",
+          "target": "Sports",
+          "generated": "Sports"
+        }
+      ],
+      "eval_modes": {
+        "classification": "loss_based_label_scoring",
+        "nli": "loss_based_label_scoring",
+        "open_output_tasks": "greedy_generation",
+        "attack_eval": "loss_only"
+      },
+      "eval_prompt_format": "response"
+    },
+    {
+      "dataset": "val",
+      "num_samples": 3000,
+      "avg_loss": 0.3574664128610469,
+      "group_losses": {
+        "A": 0.4635067198840261,
+        "B": 0.14538579881508848
+      },
+      "task_losses": {
+        "classification": 0.2594514980475069,
+        "nli": 0.6675619417205453,
+        "pii_detection": 0.14538579881508848
+      },
+      "metrics": {
+        "classification": {
+          "accuracy": 0.882,
+          "n_samples": 1000
+        },
+        "nli": {
+          "accuracy": 0.368,
+          "n_samples": 1000
+        },
+        "pii_detection": {
+          "relaxed_precision": 0.1868,
+          "relaxed_recall": 0.9839,
+          "relaxed_f1": 0.314,
+          "relaxed_exact_match": 0.19,
+          "n_samples": 1000
+        }
+      },
+      "metrics_num_samples": 3000,
+      "samples": [
+        {
+          "group": "A",
+          "task": "classification",
+          "input": "Instruction: Classify the topic of the news article. Answer with one of: World, Sports, Business, Sci/Tech.\n\nText: Electronic Jihad Internet Attack Rumored For Today Electronic Jihad Internet Attack Rumored For Today\\\\Is the Electronic Jihad attack happening today or is it just stirred up rumors? Yevgeny Kaspersky has raised concerns of a major attack on the internet today. Kaspersky has been widely quoted as saying that there would be a major online attack against Israeli ...\nLabel:",
+          "target": "Sci/Tech",
+          "generated": "Sci/Tech"
+        },
+        {
+          "group": "A",
+          "task": "nli",
+          "input": "Instruction: Determine the relationship between the premise and the hypothesis. Answer with one of: entailment, neutral, contradiction.\n\nPremise: Whether a government postal service can engage in these kinds of negotiations deserves serious study.\nHypothesis: It is already certain that the postal service can engage in these negotiations.\nLabel:",
+          "target": "contradiction",
+          "generated": "entailment"
+        },
+        {
+          "group": "A",
+          "task": "nli",
+          "input": "Instruction: Determine the relationship between the premise and the hypothesis. Answer with one of: entailment, neutral, contradiction.\n\nPremise: Zoom-out vs. zoom- Ever since Roe , pro-life posters and pamphlets have depicted isolated fetuses.\nHypothesis: It's been argued that pro-life posters are seeking to humanize the unborn through these depictions.\nLabel:",
+          "target": "neutral",
+          "generated": "entailment"
+        },
+        {
+          "group": "A",
+          "task": "nli",
+          "input": "Instruction: Determine the relationship between the premise and the hypothesis. Answer with one of: entailment, neutral, contradiction.\n\nPremise: You can either fly on TAP/Air Portugal (15-minute flight) or take the ferry (which leaves daily at 8am; Tel. 291/226 511).\nHypothesis: You have the option of flying or taking the ferry.\nLabel:",
+          "target": "entailment",
+          "generated": "entailment"
+        },
+        {
+          "group": "A",
+          "task": "classification",
+          "input": "Instruction: Classify the topic of the news article. Answer with one of: World, Sports, Business, Sci/Tech.\n\nText: Lowe's road to glory For Derek Lowe, two roads diverged not in a yellow wood, as New England's poet laureate Robert Frost had it, but on the greenswards of Fenway Park, Yankee Stadium, and Busch Stadium.\nLabel:",
+          "target": "Sports",
+          "generated": "Sports"
+        }
+      ],
+      "eval_modes": {
+        "classification": "loss_based_label_scoring",
+        "nli": "loss_based_label_scoring",
+        "open_output_tasks": "greedy_generation",
+        "attack_eval": "loss_only"
+      },
+      "eval_prompt_format": "response"
+    },
+    {
+      "dataset": "attack_eval",
+      "num_samples": 1000,
+      "avg_loss": 3.832248024940491,
+      "group_losses": {
+        "C": 3.832248024940491
+      },
+      "task_losses": {
+        "secret_recall": 3.832248024940491
+      },
+      "metrics": null,
+      "metrics_num_samples": 0,
+      "samples": [],
+      "eval_modes": {
+        "classification": "loss_based_label_scoring",
+        "nli": "loss_based_label_scoring",
+        "open_output_tasks": "greedy_generation",
+        "attack_eval": "loss_only"
+      },
+      "eval_prompt_format": "response"
+    }
+  ]
+}

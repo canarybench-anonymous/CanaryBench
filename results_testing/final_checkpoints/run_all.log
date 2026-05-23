@@ -1,0 +1,391 @@
+Using CUDA_VISIBLE_DEVICES=0
+============================================================
+Final-checkpoint evaluation started: Mon May  4 08:20:37 PM EDT 2026
+Dataset     : all
+Data dir    : instruction_recall_dataset/dataset/processed
+Results dir : results_testing/final_checkpoints
+Device      : cuda
+Max samples : 0
+============================================================
+
+============================================================
+Evaluating gemma3_1b baseline final: Mon May  4 08:20:37 PM EDT 2026
+Checkpoint: checkpoints/gemma3_1b/baseline/final
+Log       : results_testing/final_checkpoints/logs/gemma3_1b_baseline_all.log
+============================================================
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 7919.23it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loaded LoRA checkpoint: checkpoints/gemma3_1b/baseline/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=unknown
+=================================================================
+  Classification Accuracy : 0.8610
+  NLI Accuracy            : 0.6180
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=unknown
+=================================================================
+  Classification Accuracy : 0.8710
+  NLI Accuracy            : 0.6150
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+
+Saved results to results_testing/final_checkpoints/gemma3_1b_checkpoints__gemma3_1b__baseline__final_all_clean_eval.json
+OK gemma3_1b baseline
+
+============================================================
+Evaluating gemma3_1b dp_eps3.0 final: Mon May  4 08:46:31 PM EDT 2026
+Checkpoint: checkpoints/gemma3_1b/dp_eps3.0/final
+Log       : results_testing/final_checkpoints/logs/gemma3_1b_dp_eps3.0_all.log
+============================================================
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 9754.00it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loaded LoRA checkpoint: checkpoints/gemma3_1b/dp_eps3.0/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=3.0
+=================================================================
+  Classification Accuracy : 0.6440
+  NLI Accuracy            : 0.5020
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=3.0
+=================================================================
+  Classification Accuracy : 0.6480
+  NLI Accuracy            : 0.5430
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+
+Saved results to results_testing/final_checkpoints/gemma3_1b_checkpoints__gemma3_1b__dp_eps3.0__final_all_clean_eval.json
+OK gemma3_1b dp_eps3.0
+
+============================================================
+Evaluating gemma3_1b dp_eps5.0 final: Mon May  4 09:11:30 PM EDT 2026
+Checkpoint: checkpoints/gemma3_1b/dp_eps5.0/final
+Log       : results_testing/final_checkpoints/logs/gemma3_1b_dp_eps5.0_all.log
+============================================================
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 10664.39it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loaded LoRA checkpoint: checkpoints/gemma3_1b/dp_eps5.0/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=5.0
+=================================================================
+  Classification Accuracy : 0.5850
+  NLI Accuracy            : 0.5040
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=5.0
+=================================================================
+  Classification Accuracy : 0.6190
+  NLI Accuracy            : 0.5410
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+
+Saved results to results_testing/final_checkpoints/gemma3_1b_checkpoints__gemma3_1b__dp_eps5.0__final_all_clean_eval.json
+OK gemma3_1b dp_eps5.0
+
+============================================================
+Evaluating gemma3_1b dp_eps8.0 final: Mon May  4 09:36:22 PM EDT 2026
+Checkpoint: checkpoints/gemma3_1b/dp_eps8.0/final
+Log       : results_testing/final_checkpoints/logs/gemma3_1b_dp_eps8.0_all.log
+============================================================
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 7548.90it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loaded LoRA checkpoint: checkpoints/gemma3_1b/dp_eps8.0/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=8.0
+=================================================================
+  Classification Accuracy : 0.5500
+  NLI Accuracy            : 0.4840
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=8.0
+=================================================================
+  Classification Accuracy : 0.5770
+  NLI Accuracy            : 0.5180
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+
+Saved results to results_testing/final_checkpoints/gemma3_1b_checkpoints__gemma3_1b__dp_eps8.0__final_all_clean_eval.json
+OK gemma3_1b dp_eps8.0
+
+============================================================
+Evaluating gemma3_1b dp_eps16.0 final: Mon May  4 10:01:25 PM EDT 2026
+Checkpoint: checkpoints/gemma3_1b/dp_eps16.0/final
+Log       : results_testing/final_checkpoints/logs/gemma3_1b_dp_eps16.0_all.log
+============================================================
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 12170.79it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loaded LoRA checkpoint: checkpoints/gemma3_1b/dp_eps16.0/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=16.0
+=================================================================
+  Classification Accuracy : 0.5300
+  NLI Accuracy            : 0.5100
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=16.0
+=================================================================
+  Classification Accuracy : 0.5630
+  NLI Accuracy            : 0.5400
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+
+Saved results to results_testing/final_checkpoints/gemma3_1b_checkpoints__gemma3_1b__dp_eps16.0__final_all_clean_eval.json
+OK gemma3_1b dp_eps16.0
+
+============================================================
+Evaluating gemma3_1b dp_eps64.0 final: Mon May  4 10:26:32 PM EDT 2026
+Checkpoint: checkpoints/gemma3_1b/dp_eps64.0/final
+Log       : results_testing/final_checkpoints/logs/gemma3_1b_dp_eps64.0_all.log
+============================================================
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights: 100%|██████████| 340/340 [00:00<00:00, 7697.09it/s]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loaded LoRA checkpoint: checkpoints/gemma3_1b/dp_eps64.0/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=64.0
+=================================================================
+  Classification Accuracy : 0.5110
+  NLI Accuracy            : 0.5470
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma3_1b  ε=64.0
+=================================================================
+  Classification Accuracy : 0.5360
+  NLI Accuracy            : 0.5650
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+
+Saved results to results_testing/final_checkpoints/gemma3_1b_checkpoints__gemma3_1b__dp_eps64.0__final_all_clean_eval.json
+OK gemma3_1b dp_eps64.0
+
+============================================================
+Evaluating gemma_2b_it baseline final: Mon May  4 10:51:38 PM EDT 2026
+Checkpoint: checkpoints/gemma_2b_it/baseline/final
+Log       : results_testing/final_checkpoints/logs/gemma_2b_it_baseline_all.log
+============================================================
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights: 100%|██████████| 288/288 [00:00<00:00, 7100.55it/s]
+Loaded LoRA checkpoint: checkpoints/gemma_2b_it/baseline/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma_2b_it  ε=unknown
+=================================================================
+  Classification Accuracy : 0.8830
+  NLI Accuracy            : 0.8320
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma_2b_it  ε=unknown
+=================================================================
+  Classification Accuracy : 0.8750
+  NLI Accuracy            : 0.8140
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+
+Saved results to results_testing/final_checkpoints/gemma_2b_it_checkpoints__gemma_2b_it__baseline__final_all_clean_eval.json
+OK gemma_2b_it baseline
+
+============================================================
+Evaluating gemma_2b_it dp_eps3.0 final: Mon May  4 11:14:17 PM EDT 2026
+Checkpoint: checkpoints/gemma_2b_it/dp_eps3.0/final
+Log       : results_testing/final_checkpoints/logs/gemma_2b_it_dp_eps3.0_all.log
+============================================================
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights: 100%|██████████| 288/288 [00:00<00:00, 8937.19it/s]
+Loaded LoRA checkpoint: checkpoints/gemma_2b_it/dp_eps3.0/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma_2b_it  ε=3.0
+=================================================================
+  Classification Accuracy : 0.7950
+  NLI Accuracy            : 0.7210
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma_2b_it  ε=3.0
+=================================================================
+  Classification Accuracy : 0.8030
+  NLI Accuracy            : 0.7290
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+
+Saved results to results_testing/final_checkpoints/gemma_2b_it_checkpoints__gemma_2b_it__dp_eps3.0__final_all_clean_eval.json
+OK gemma_2b_it dp_eps3.0
+
+============================================================
+Evaluating gemma_2b_it dp_eps5.0 final: Mon May  4 11:29:11 PM EDT 2026
+Checkpoint: checkpoints/gemma_2b_it/dp_eps5.0/final
+Log       : results_testing/final_checkpoints/logs/gemma_2b_it_dp_eps5.0_all.log
+============================================================
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights: 100%|██████████| 288/288 [00:00<00:00, 7166.94it/s]
+Loaded LoRA checkpoint: checkpoints/gemma_2b_it/dp_eps5.0/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma_2b_it  ε=5.0
+=================================================================
+  Classification Accuracy : 0.7950
+  NLI Accuracy            : 0.7150
+=================================================================
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating val: 3,000 examples
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — gemma_2b_it  ε=5.0
+=================================================================
+  Classification Accuracy : 0.7970
+  NLI Accuracy            : 0.7230
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+
+Saved results to results_testing/final_checkpoints/gemma_2b_it_checkpoints__gemma_2b_it__dp_eps5.0__final_all_clean_eval.json
+OK gemma_2b_it dp_eps5.0
+
+============================================================
+Evaluating gemma_2b_it dp_eps8.0 final: Mon May  4 11:44:27 PM EDT 2026
+Checkpoint: checkpoints/gemma_2b_it/dp_eps8.0/final
+Log       : results_testing/final_checkpoints/logs/gemma_2b_it_dp_eps8.0_all.log
+============================================================
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights: 100%|██████████| 288/288 [00:00<00:00, 8283.62it/s]

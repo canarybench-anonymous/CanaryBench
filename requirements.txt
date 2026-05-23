@@ -1,0 +1,16 @@
+torch>=2.3
+transformers>=4.45
+accelerate>=0.34
+peft>=0.12
+opacus>=1.5
+datasets>=2.20
+scikit-learn>=1.5
+pandas>=2.2
+numpy>=1.26
+tqdm>=4.66
+faker>=25.0
+rouge-score>=0.1.2
+sentencepiece>=0.2.0
+protobuf>=4.25
+openpyxl>=3.1
+safetensors>=0.4

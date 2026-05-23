@@ -1,0 +1,13 @@
+model,tier,evaluated,canaries_extracted,extraction_rate
+gemma_2b_it_20,50,20,19,0.95
+gemma_2b_it_20,10,20,7,0.35
+gemma_2b_it_20,1,20,0,0.0
+vault_gemma_20,50,20,20,1.0
+vault_gemma_20,10,20,1,0.05
+vault_gemma_20,1,20,0,0.0
+gemma3_1b_20,50,20,0,0.0
+gemma3_1b_20,10,20,0,0.0
+gemma3_1b_20,1,20,0,0.0
+llama3_2_1b_it_20,50,20,20,1.0
+llama3_2_1b_it_20,10,20,20,1.0
+llama3_2_1b_it_20,1,20,0,0.0

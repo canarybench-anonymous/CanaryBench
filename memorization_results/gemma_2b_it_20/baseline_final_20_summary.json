@@ -1,0 +1,23 @@
+[
+  {
+    "model": "gemma_2b_it_20",
+    "tier": 50,
+    "evaluated": 20,
+    "canaries_extracted": 19,
+    "extraction_rate": 0.95
+  },
+  {
+    "model": "gemma_2b_it_20",
+    "tier": 10,
+    "evaluated": 20,
+    "canaries_extracted": 7,
+    "extraction_rate": 0.35
+  },
+  {
+    "model": "gemma_2b_it_20",
+    "tier": 1,
+    "evaluated": 20,
+    "canaries_extracted": 0,
+    "extraction_rate": 0.0
+  }
+]

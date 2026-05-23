@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Instruction_recall_dataset",
+  "description": "\n\t\n\t\t\n\t\tCanaryBench-PII\n\t\n\nFrequency-aware canary injection benchmark for auditing memorization \nin finetuned language models, built on the AI4Privacy PII reconstruction \ntask.\n\n\t\n\t\t\n\t\tDataset Description\n\t\n\nThis dataset is part of CanaryBench, a benchmark for evaluating \nmemorization in finetuned language models across repetition tiers \nand privacy regimes.\n\nFrequency tiers: 1×, 10×, 50×\nPII types: EMAIL, PHONE\nMember canaries: 770\nReference canaries: 1000\nTasks: PII detection, secret recall… See the full description on the dataset page: https://huggingface.co/datasets/anony-mouse123/Instruction_recall_dataset.",
+  "alternateName": [
+    "anony-mouse123/Instruction_recall_dataset"
+  ],
+  "creator": {
+    "@type": "Person",
+    "name": "anon",
+    "url": "https://huggingface.co/anony-mouse123"
+  },
+  "keywords": [
+    "text-generation",
+    "English",
+    "cc-by-4.0",
+    "1K\u003Cn\u003C10K",
+    "🇺🇸 Region: US",
+    "privacy",
+    "memorization",
+    "differential-privacy",
+    "canary-injection",
+    "PII"
+  ],
+  "license": "https://choosealicense.com/licenses/cc-by-4.0/",
+  "url": "https://huggingface.co/datasets/anony-mouse123/Instruction_recall_dataset",
+  "rai:dataLimitations": "All PII canaries are synthetic, covering EMAIL and PHONE types only. Not suitable for evaluating real personal data leakage. Results may not generalize to other PII types or domains.",
+"rai:personalSensitiveInformation": "No real personal information is included. All PII values are fully synthetic and randomly generated using the AI4Privacy schema.",
+"rai:intendedUse": "Privacy auditing and memorization benchmarking for finetuned language models. Designed for researchers studying differential privacy and memorization in LLMs.",
+"rai:prohibitedUse": "Must not be used to attack or extract information from production systems or real individuals."
+}

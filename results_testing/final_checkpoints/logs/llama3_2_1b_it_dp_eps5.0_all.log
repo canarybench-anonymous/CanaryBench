@@ -1,0 +1,38 @@
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 7722.37it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loaded LoRA checkpoint: checkpoints/llama3_2_1b_it/dp_eps5.0/final
+  Loaded 3,000 records from instruction_recall_dataset/dataset/processed/combined_test.jsonl
+  Group counts: {'A': 2000, 'B': 1000}
+
+Evaluating test: 3,000 examples
+  Eval prompt format : chat
+  Label-scored records: 2,000
+  Generation records  : 1,000
+
+=================================================================
+METRICS — llama3_2_1b_it  ε=5.0
+=================================================================
+  Classification Accuracy : 0.8130
+  NLI Accuracy            : 0.4740
+=================================================================
+  Loaded 2,999 records from instruction_recall_dataset/dataset/processed/combined_val.jsonl
+  Group counts: {'A': 1999, 'B': 1000}
+
+Evaluating val: 2,999 examples
+  Eval prompt format : chat
+  Label-scored records: 1,999
+  Generation records  : 1,000
+
+=================================================================
+METRICS — llama3_2_1b_it  ε=5.0
+=================================================================
+  Classification Accuracy : 0.8228
+  NLI Accuracy            : 0.4680
+=================================================================
+  Loaded 1,000 records from instruction_recall_dataset/dataset/processed/attack_eval.jsonl
+  Group counts: {'C': 1000}
+
+Evaluating attack_eval: 1,000 examples
+  Eval prompt format : chat
+
+Saved results to results_testing/final_checkpoints/llama3_2_1b_it_checkpoints__llama3_2_1b_it__dp_eps5.0__final_all_clean_eval.json
